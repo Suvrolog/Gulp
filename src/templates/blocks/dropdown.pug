@@ -1,0 +1,36 @@
+form.dropdown#dropdown(action="*")
+        .dropdown__container
+            .dropdown__name Brand
+            .dropdown__select 
+                span.dropdown__default
+                .dropdown__hide
+                //меня зовут костыль и я скрываю левую палку
+                .dropdown__row
+                    span.dropdown__item Puma
+                    span.dropdown__item Adidas
+                    span.dropdown__item Nike
+        .dropdown__container
+            .dropdown__name Person
+            .dropdown__select
+                span.dropdown__default
+                .dropdown__row
+                    span.dropdown__item man
+                    span.dropdown__item woman
+        .dropdown__container
+            .dropdown__name Srand
+            .dropdown__select
+                span.dropdown__default
+                .dropdown__row
+                    span.dropdown__item small
+                    span.dropdown__item large
+                    span.dropdown__item ex-large
+        .dropdown__container
+            .dropdown__name Price
+            .dropdown__select
+                span.dropdown__default
+                .dropdown__row
+                    span.dropdown__item 150$
+                    span.dropdown__item 200$
+                    span.dropdown__item 250$
+                    span.dropdown__item 300$
+        +button('Buy now', 'makeButton dropdown__button', '#sign')

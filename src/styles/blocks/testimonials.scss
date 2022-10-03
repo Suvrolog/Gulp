@@ -1,0 +1,265 @@
+.testimonials {
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 27px;
+  min-height: 900px;
+  &__header {
+
+    height: 57px;
+    left: 672px;
+    top: 2793px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: $ultraText;
+    line-height: 130%;
+    color: $blackColor;
+    text-align: center;
+  }
+  &__smallhead{
+    margin-top: 75px;
+  }
+  &__about {
+    display: flex;
+    margin-top: 64px;
+    justify-content: space-between;
+  }
+  &__foto {
+    width: 555px;
+    height: 364px;
+    left: 230px;
+    top: 2910px;
+    border-radius: 10px;
+  }
+  &__avatar {
+    width: 100px;
+    height: 100px;
+    left: 912px;
+    top: 2917px;
+    background: url(.jpg);
+  }
+  &__sign {
+    display: flex;
+    justify-content:space-between;
+    margin-top: 130px;
+    &--text {
+      width: 525px;
+      height: 54px;
+      margin-top: 21px;
+      font-style: normal;
+      font-weight: 400;
+      font-size: $noramlText;
+      line-height: 160%;
+      color: $greyColor;
+      font-family: "Poppins", sans-serif;
+    }
+    &--header {
+      width: 358px;
+      height: 43px;
+      left: 781px;
+      top: 3477px;
+      font-style: normal;
+      font-weight: 600;
+      font-size: $bigText;
+      line-height: 140%;
+      color: $blackColor;
+    }
+  }
+  &__text{
+    width: 364px;
+    height: 44px;
+    margin-top: -6px;
+    font-style: italic;
+    font-weight: 500;
+    font-size: $smallText;
+    line-height: 160%;
+    color: $greyColor;
+    font-family: 'Poppins', sans-serif;
+  }
+  &__logo {
+    width: 488px;
+    height: 334px;
+    filter: drop-shadow(0px 1px 30px rgba(26, 10, 3, 0.07));
+    border-radius: 10px 0px 0px 10px;
+  }
+  
+  &__quote{
+    width: 360px;
+    height: 365px;
+    margin-right: 8.5%;
+    margin-top: 5px;
+  }
+  &__author{
+    font-family: 'Poppins', sans-serif;
+    margin-top: 25px;
+  }
+
+  &__container{
+    margin-right: 97px;
+  }
+  
+  &__sport{
+    font-family: 'Poppins', sans-serif;
+    color: $greyColor;
+    font-size: $smallText;
+    margin-top: 10px;
+  }
+  &__slider{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 18%;
+    position: absolute;
+    width: 145px;
+    z-index: 100;
+    &--left{
+      width: 50px;
+      height: 50px;
+      background: $pinkColor;
+      border-radius: 50%;
+      &::before{
+        content: "";
+        transform: rotate(135deg);
+        -webkit-transform: rotate(135deg);
+        border: solid $blackColor;
+        border-width: 0 3px 3px 0;
+        display: inline-block;
+        padding: 5px;
+        margin-left: 20px;
+        margin-top: 19px;
+      }
+      &:hover{
+        background: $orangeColor;
+      }
+    }
+    &--right{
+      width: 50px;
+      height: 50px;
+      background: $pinkColor;
+      border-radius: 50%;
+      &::before{
+        content: "";
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+        border: solid $blackColor;
+        border-width: 0 3px 3px 0;
+        display: inline-block;
+        padding: 5px;
+        margin-left: 18px;
+        margin-top: 19px;
+      }
+      &:hover{
+        background: $orangeColor;
+      }
+    }
+  }
+  &__submit{
+    padding: 13.5008px 40px 16px 40px;
+    width: 117px;
+    height: 51px;
+    margin-left: -7px;
+    background: $orangeColor;
+    border-radius: 0px 5px 5px 0px;
+    color: white;
+    border-color: $orangeColor;
+  }
+  &__input{
+    margin-top: 40px;
+    height: 45px;
+    width: 405px;
+    border-radius: 5px 0px 0px 5px;
+  }
+  &__form{
+    margin-right: 58px;
+    margin-top: 63px;
+  }
+}
+
+@media screen and (max-width: 1180px) {
+  .testimonials{
+    &__input{
+      width: 235px;
+    }
+    &__submit{
+      width: 76px;
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+    &__sign--text{
+      width: 310px;
+    }
+    &__quote{
+      width: 310px;
+      margin-left: 10px;
+    }
+    &__text{
+      width: 310px;
+    }
+    &__form{
+      margin-left: 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 915px) {
+  .testimonials{
+    margin-top: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    min-height: 370px;
+    &__about{
+      width: 410px;
+      margin-top: 0%;
+    }
+    &__quote{
+      width: 310px;
+      margin-left: 10px;
+    }
+    &__form{
+      margin-right: 0px;
+      margin-top: 0px;
+    }
+    &__sign{
+      justify-content: center;
+      width: 380px;
+      margin-top: 0px;
+    }
+    &__logo{
+      display: none;
+    }
+    &__header{
+      display: none;
+    }
+    &__foto{
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 845px) {
+  .testimonials{
+    font-size: $baseText;
+    margin-top: -100px;
+    &__smallhead{
+      margin-top: 0px;
+    }
+    &__quote{
+      height: 300px;
+    }
+    &__slider{
+      display: none;
+    }
+    &__sign--header{
+      font-size: $bigText;
+    }
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .testimonials{
+    font-size: $smallText;
+    &__quote{
+      margin-left: 10%;
+    }
+  }
+}

@@ -1,0 +1,7 @@
+@function px2em($pixels, $context: $fontSz) {
+  @if (not $context) {
+    @error 'error';
+  }
+
+  @return calc($pixels / $context) * 1em;
+}

@@ -1,0 +1,15 @@
+extends ../templates/layout/baseLayout
+block variables
+   - var title = "Главная страница"
+
+block main
+   .wrapper 
+      include ../templates/blocks/header
+      include ../templates/mixins/button
+      include ../templates/blocks/video
+      include ../templates/blocks/feature
+      include ../templates/blocks/gallary
+      include ../templates/blocks/testimonials
+      include ../templates/blocks/footer
+
+      <script src="/js/main.js"></script>

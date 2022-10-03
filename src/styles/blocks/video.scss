@@ -1,0 +1,161 @@
+.video {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1140px;
+  margin: auto;
+  min-height: 620px;
+  &__header {
+    width: 65px;
+    height: 30px;
+    left: 230px;
+    margin-top: 188px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: $mediumText;
+    line-height: 150%;
+    letter-spacing: 0.05em;
+    color: $orangeColor;
+
+  }
+  &__right{
+    margin-left: 21.5%;
+    width: 400px;
+  }
+  &__button{
+    position: absolute;
+    cursor: pointer;
+    &::after{
+      content:"";
+    width: 100px;
+    height: 100px;
+    margin-left: 228px;
+    margin-top: 292px;
+    position: absolute;
+    background: white;
+    z-index: 200;
+    border-radius: 50%;
+    }
+    &::before{
+      content: "";
+      position: absolute;
+      color: $orangeColor;
+      border-top: 15px solid transparent;
+      border-left: 25px solid $orangeColor;
+      border-bottom: 15px solid transparent;
+      margin-top: 326px;
+      margin-left: 268px;
+      z-index: 300;
+    }
+  }
+  &__play {
+    position: relative;
+    width: 555px;
+    height: 326px;
+    margin-top: -276px;
+    border-radius: 10px;
+    z-index: 100;
+  }
+  &__next {
+    width: 555px;
+    height: 326px;
+    margin-left: 9.5%;
+    margin-top: 125px;
+  }
+  &__text {
+    width: 340px;
+    height: 114px;
+    left: 230px;
+    margin-top: -3px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: $ultraText;
+    line-height: 130%;
+    color: $blackColor;
+
+  }
+  &__text--small {
+    width: 326px;
+    height: 78px;
+    margin-top: 22px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: $baseText;
+    line-height: 160%;
+    color: $greyColor;
+    font-family: "Poppins", sans-serif;
+  }
+}
+
+@media screen and (max-width: 1180px) {
+  .video{
+    justify-content: space-between;
+    &__right {
+      margin-left: 0%;
+      width: 500px;
+    }
+    &__button{
+      margin-left: -20px;
+      margin-top: -30px;
+    }
+    &__play{
+      margin-top: 180px;
+      width: 500px;
+      height: 270px;
+    }
+    &__next{
+      display: none;
+    }
+    
+  }
+}
+@media screen and (max-width: 915px) {
+  .video{
+    justify-content: center;
+    min-height: 350px;
+    &__header{
+      margin-top: 50px;
+    }
+    &__button{
+      margin-top: -150px;
+    }
+    &__text{
+      font-size: $ultraText;
+    }
+    &__play{
+      margin-top: 50px;
+    }
+  }
+}
+
+@media screen and (max-width: 845px) {
+  .video{
+    font-size: $baseText;
+  }
+}
+@media screen and (max-width: 540px) {
+  .video{
+    font-size: $smallText;
+    &__button{
+      margin-left: -100px;
+      margin-top: -250px;
+    }
+    &__text{
+      font-size: $bigText;
+      &--small{
+        margin-top: 0px;
+        font-size: $smallText;
+      }
+    }
+   
+    &__play{
+      margin-top: 0px;
+      width: 350px;
+      height: 170px;
+    }
+    &__right{
+      width: 350px;
+      height: 170px;
+    }
+  }
+}
+

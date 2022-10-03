@@ -1,0 +1,52 @@
+.menu {
+  &__block{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    width: 330px;
+    margin-left: 158px;
+    
+  }
+  &__click{
+
+    margin: 0 0px 0 0px;
+  }
+
+  &__link{
+    font-style: normal;
+    font-weight:bold;
+    font-size: $baseText;
+    line-height: 160%;
+    color: $greyColor;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    &:hover{
+      color: $orangeColor;
+    }
+  }
+  
+  &__button{
+    position: absolute;
+    margin-left: 64%;
+    margin-top: -60px;
+  }
+}
+
+@media screen and (max-width: 845px) {
+  .menu{
+    font-size: $baseText;
+    &__button{
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .menu{
+    font-size: $baseText;
+    &__block{
+      margin-left: 5%;
+      width: 270px;
+    }
+  }
+}

@@ -1,0 +1,18 @@
+@use "sass:color";
+
+@mixin makeButton($bgColor, $fontColor, $radius) {
+  background: $bgColor;
+  color: $whiteColor;
+  border-radius: $radius;
+  text-decoration: none; 
+  padding: 11.2px 19.2px;
+  font-family: 'Poppins', sans-serif;
+  &:hover {
+    background-color: $pinkColor;
+    color: $orangeColor;
+  }
+}
+
+.makeButton {
+  @include makeButton($orangeColor, $whiteColor, 0.1875rem);
+}

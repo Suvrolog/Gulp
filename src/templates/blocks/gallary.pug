@@ -1,0 +1,19 @@
+section.gallary#gallary
+    h2.gallary__header GALLARY
+    h3.gallary__text 40+ YEARS EXPERIENCE
+    ul.gallary__categories.clearfix
+        li.gallary__categories--table Categories:
+        li.gallary__filter(data-filter="all") All
+        li.gallary__filter(data-filter="male") Male
+        li.gallary__filter(data-filter="female") Female
+        li.gallary__filter(data-filter="kids") Kids
+    .gallary__slider
+    .cart.slider.multiple-items
+        +createCart('/images/Rectangle9.jpg', 'Puma RS-X Bold', 'Dubble-XL', '200','female')
+        +createCart('images/Rectangle10.jpg', 'Puma Sneakers', 'Dubble-XL', '180','female')
+        +createCart('/images/Rectangle11.jpg', 'Puma Ferrari', 'Dubble-XL', '190','male')
+        +createCart('/images/Rectangle12.jpg', 'Puma Running', 'Dubble-XL', '200','male')
+        +createCart('',  'Puma Running', 'Small', '200','kids')
+        +createCart('',  'Puma Running', 'Small', '200','kids')
+        +createCart('',  'Puma Running', 'Dubble-XL', '','kids')
+        +createCart('',  'Puma Running', 'Dubble-XL', '','kids')

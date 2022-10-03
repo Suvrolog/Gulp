@@ -1,0 +1,15 @@
+mixin createCart(imgUrl, itemName, itemSize, price, filter)
+      .cart__item(class= filter)
+         if(imgUrl)
+            img.cart__img(src= imgUrl alt='')
+         else
+            img.cart__img(src='https://upload.wikimedia.org/wikipedia/commons/3/3e/Adidas_Conductor_High_Olympics_1988_re-edition_sneakers.jpg' alt='Кросовок')
+         .cart_text
+            h3 #{itemName}
+            ul.cart__properties
+               li.cart__option Size: #{itemSize}
+               if(price)
+                  li.cart__option Price: $#{price} 
+               else
+                  li.cart__option Price: unnamed
+         +button('Buy now', 'makeButton cart__button', '#sign')

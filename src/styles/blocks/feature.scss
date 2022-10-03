@@ -1,0 +1,146 @@
+.feature {
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 26px;
+  min-height: 700px;
+  &__header {
+    text-align: center;
+    font-style: normal;
+    font-weight: 600;
+    font-size: $mediumText;
+    line-height: 150%;
+    letter-spacing: 0.05em;
+    color: $orangeColor;
+  }
+  &__headsmall {
+    text-align: center;
+    margin-top: 71px;
+  }
+  &__text {
+    margin-top: -13px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: $ultraText;
+    line-height: 130%;
+    text-align: center;
+    color: $blackColor;
+  }
+  &__text--small {
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: $smallText;
+    line-height: 160%;
+    width: 239px;
+    color: $greyColor;
+    margin-top: -12px;
+    margin-bottom: 22px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Poppins", sans-serif;
+  }
+  &__circle::after {
+    content:"";
+    width: 140px;
+    height: 140px;
+    margin-left: -105px;
+    margin-top: 99px;
+    position: absolute;
+    background: #5F2EEA;
+    opacity: 0.1;
+    border-radius: 50%;
+  }
+  &__reklam--img {
+    margin-left: 39%;
+
+    margin-top: 38.46%;
+    width: 70px;
+  }
+  &__link {
+    color: $orangeColor;
+    text-decoration: none;
+    width: 90px;
+    margin-left: 37%;
+  }
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: -20px;
+  }
+  &__arrow{
+    position: absolute;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    border: solid $greyColor;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 2px;
+    margin-left: 3px;
+    margin-top: 10px;
+  }
+  &__reklam {
+    width: 360px;
+    height: 423px;
+    background: #ffffff;
+    box-shadow: 0px 1px 30px rgba(26, 10, 3, 0.05);
+    border-radius: 10px;
+    
+    &:hover {
+      background: $pinkColor;
+    }
+  }
+}
+
+@media screen and (max-width: 1180px) {
+  .feature{
+    justify-content: space-between;
+    &__reklam {
+      width: 280px;
+      &--img{
+        margin-top: 135px;
+      }
+    }
+
+  }
+}
+
+@media screen and (max-width: 915px) {
+  .feature{
+    min-height: 300px;
+    &__content{
+      justify-content: space-around;
+    }
+  }
+}
+
+@media screen and (max-width: 845px) {
+  .feature{
+    font-size: $baseText;
+    &__text{
+      font-size: $ultraText;
+    }
+    &__arrow{
+      margin-top: 8px;
+    }
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .feature{
+    font-size: $smallText;
+    &__text{
+      font-size: $bigText;
+    }
+    &__reklam{
+      height: 200px;
+    }
+    &__arrow{
+      margin-top: 8px;
+    }
+    &__circle{
+      display: none;
+    }
+  }
+}

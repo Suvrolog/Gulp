@@ -1,0 +1,87 @@
+.dropdown{
+    display: flex;
+    margin-left: 20px;
+    width: 792px;
+    height: 125px;
+    background: #ffffff;
+    box-shadow: 0px 1px 14px rgba(26, 10, 3, 0.05);
+    border-radius: 5px;
+    margin-top: 65px;
+    justify-content: center;
+    align-items: center;
+    &__hide{
+      position: absolute;
+      width: 10px;
+      height: 40px;
+      margin-left: -25px;
+      margin-top: -40px;
+      background-color: white;
+      z-index: 300;
+    }
+    &__name{
+    color: $greyColor;
+    font-family: 'Poppins', sans-serif;
+    }
+    &__default{
+    margin-right: 66px;
+    cursor: pointer;
+        &::after{
+        content: "";
+            transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+            border: solid $orangeColor;
+            border-width: 0 2px 2px 0;
+            display: inline-block;
+            padding: 3px;
+            margin-left: 15px;
+            margin-bottom: 3px;
+        }
+    
+        &::before{
+        content: "";
+        border-left: 2px solid $orangeColor;
+        height: 35px;    
+        position: absolute;
+        margin-left: -20px;
+        margin-top: -17px;
+        }
+    }
+    &__row {
+    display: none;
+    position: absolute;
+    width: 100px;
+    cursor: pointer;
+        &--active {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        }
+    &__item{
+      width: 100px;
+      cursor: pointer;
+    }
+   
+  }
+}
+
+@media screen and (max-width: 845px) {
+    .dropdown{
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+        padding-left: 20px;
+        width: 400px;
+        padding-top: 40px;
+        box-shadow: none;
+        &__button{
+            padding: 5px 120px 5px 120px;
+            position: absolute;
+            margin-top: -130px;
+            margin-left: -70px;
+        }
+        &__hide{
+          margin-top: -55px;
+        }
+    }
+}
